@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Kyiv Grand house",
+    "location": "Kyiv",
+    "CountRooms": 10,
+    "Price": 350000.00
+  },
+  {
+    "id": 2,
+    "name": "Black Sea Resort",
+    "location": "Odessa",
+    "CountRooms": 10,
+    "Price": 500000.00
+  },
+  {
+    "id": 3,
+    "name": "Carpathian Lodge",
+    "location": "Carpathians",
+    "CountRooms": 6,
+    "Price": 250000.00
+  },
+  {
+    "id": 4,
+    "name": "Dnipro Palace house",
+    "location": "Dnipro",
+    "CountRooms": 9,
+    "Price": 400000.00
+  },
+  {
+    "id": 5,
+    "name": "Sunset house",
+    "location": "Lviv",
+    "CountRooms": 12,
+    "Price": 600000.00
+  },
+  {
+    "id": 6,
+    "name": "River View Inn",
+    "location": "Kharkiv",
+    "CountRooms": 7,
+    "Price": 280000.00
+  },
+  {
+    "id": 7,
+    "name": "Eco house",
+    "location": "Vinnytsia",
+    "CountRooms": 5,
+    "Price": 180000.00
+  },
+  {
+    "id": 8,
+    "name": "Seaside Resort",
+    "location": "Chornomorsk",
+    "CountRooms": 10,
+    "Price": 450000.00
+  },
+  {
+    "id": 9,
+    "name": "Urban Comfort",
+    "location": "Kryvyi Rih",
+    "CountRooms": 6,
+    "Price": 220000.00
+  },
+  {
+    "id": 10,
+    "name": "Historic house",
+    "location": "Chernivtsi",
+    "CountRooms": 8,
+    "Price": 320000.00
+  },
+  {
+    "id": 11,
+    "name": "Forest Escape",
+    "location": "Poltava",
+    "CountRooms": 7,
+    "Price": 300000.00
+  },
+  {
+    "id": 12,
+    "name": "City Lights house",
+    "location": "Zaporizhzhia",
+    "CountRooms": 10,
+    "Price": 420000.00
+  },
+  {
+    "id": 13,
+    "name": "Peaceful Retreat",
+    "location": "Chernihiv",
+    "CountRooms": 5,
+    "Price": 190000.00
+  },
+  {
+    "id": 14,
+    "name": "Sunny Suites",
+    "location": "Ivano-Frankivsk",
+    "CountRooms": 6,
+    "Price": 230000.00
+  },
+  {
+    "id": 15,
+    "name": "Golden Bay house",
+    "location": "Yalta",
+    "CountRooms": 10,
+    "Price": 750000.00
+  }
+]

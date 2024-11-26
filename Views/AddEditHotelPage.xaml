@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KostenkoLaba3.AddEdithousePage"
+             BackgroundColor="#2d2d25">
+    <StackLayout Padding="10" Spacing="10">
+        <Label Text="{Binding PageTitle}" FontSize="Large" HorizontalOptions="Center" TextColor="White" />
+
+        <Label Text="House Name" TextColor="White" />
+        <Entry x:Name="NameEntry" Text="{Binding house.Name}" TextColor="White" BackgroundColor="#3e3e3e" />
+
+        <Label Text="Location" TextColor="White" />
+        <Entry x:Name="LocationEntry" Text="{Binding house.Location}" TextColor="White" BackgroundColor="#3e3e3e" />
+
+        <Label Text="Number of Rooms" TextColor="White" />
+        <Entry x:Name="RoomsEntry" Text="{Binding house.CountRooms}" Keyboard="Numeric" TextColor="White" BackgroundColor="#3e3e3e" />
+
+        <Label Text="Price" TextColor="White" />
+        <Entry x:Name="PriceEntry" Text="{Binding house.Price}" Keyboard="Numeric" TextColor="White" BackgroundColor="#3e3e3e" />
+
+        <Button Text="Save" Command="{Binding SaveCommand}" BackgroundColor="#2ecc71" TextColor="White" />
+        <Button Text="Cancel" Command="{Binding CancelCommand}" BackgroundColor="#e74c3c" TextColor="White" />
+    </StackLayout>
+</ContentPage>

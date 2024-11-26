@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KostenkoLaba3.MainPage"
+             BackgroundColor="#f4f4f4">
+    <StackLayout Padding="20" Spacing="15">
+        <!-- Page Title -->
+        <Label Text="House Catalog" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               TextColor="#2c3e50"
+               HorizontalOptions="Center" />
+
+        <!-- Table Headers -->
+        <Grid Padding="10" 
+              ColumnDefinitions="0.2*, 2*, *, *, *" 
+              RowDefinitions="Auto" 
+              BackgroundColor="#bdc3c7">
+            <Label Text="ID" FontAttributes="Bold" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#2c3e50" />
+            <Label Text="Name" FontAttributes="Bold" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#2c3e50" />
+            <Label Text="Location" FontAttributes="Bold" Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#2c3e50" />
+            <Label Text="Room Count" FontAttributes="Bold" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#2c3e50" />
+            <Label Text="Price" FontAttributes="Bold" Grid.Column="4" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#2c3e50" />
+        </Grid>
+
+        <!-- House List -->
+        <ScrollView VerticalOptions="FillAndExpand">
+            <CollectionView x:Name="HousesCollectionView"
+                            ItemsSource="{Binding Houses}"
+                            SelectionMode="None"
+                            HeightRequest="350">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10" 
+                              ColumnDefinitions="0.2*, 2*, *, *, *" 
+                              RowDefinitions="Auto" 
+                              BackgroundColor="#ecf0f1"
+                              Margin="0,0,0,5">
+                            <Label Text="{Binding Id}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#34495e" />
+                            <Label Text="{Binding Name}" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#34495e" />
+                            <Label Text="{Binding Location}" Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#34495e" />
+                            <Label Text="{Binding CountRooms}" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#34495e" />
+                            <Label Text="{Binding Price}" Grid.Column="4" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#34495e" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+        <!-- Buttons for Additional Actions -->
+        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="Fill" Padding="10,0">
+            <Button Text="Choose JSON File" 
+                    Clicked="OnChooseFileClicked" 
+                    BackgroundColor="#3498db" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+            <Button Text="Save Changes to File" 
+                    Clicked="OnSaveChangesClicked" 
+                    BackgroundColor="#2ecc71" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+            <Button Text="About" 
+                    Clicked="OnAboutClicked" 
+                    BackgroundColor="#e67e22" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="15" HorizontalOptions="Center" Padding="0,10">
+            <Button Text="Add" 
+                    Clicked="OnAddhouseClicked" 
+                    BackgroundColor="#f1c40f" 
+                    TextColor="Black" 
+                    CornerRadius="20" />
+            <Button Text="Edit" 
+                    Clicked="OnEdithouseClicked" 
+                    BackgroundColor="#e74c3c" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+            <Button Text="Search" 
+                    Clicked="OnAdvancedSearchClicked" 
+                    BackgroundColor="#9b59b6" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+            <Button Text="Delete" 
+                    Clicked="OnRemovehouseClicked" 
+                    BackgroundColor="#34495e" 
+                    TextColor="White" 
+                    CornerRadius="20" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

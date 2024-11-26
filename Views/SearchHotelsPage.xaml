@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KostenkoLaba3.SearchHousesPage"
+             Title="Search Houses"
+             BackgroundColor="#2d2d25">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <!-- Results List -->
+            <ListView ItemsSource="{Binding FilteredHouses}" SelectionMode="None" BackgroundColor="#3e3e3e">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#3e3e3e">
+                                <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="{Binding Location}" FontSize="14" TextColor="Gray" />
+                                <Label Text="{Binding CountRooms, StringFormat='Rooms: {0}'}" FontSize="12" TextColor="White" />
+                                <Label Text="{Binding Price, StringFormat='Price: {0}$'}" FontSize="12" TextColor="Green" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
